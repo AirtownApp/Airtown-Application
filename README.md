@@ -8,7 +8,8 @@
 
 # System overview:
 
-![image](https://github.com/user-attachments/assets/e7b61b4d-14be-4c1a-a3b3-250da2f170a6)
+![image](https://github.com/user-attachments/assets/e25a6981-d3e0-4abe-8570-67649840bbc5)
+
 
 ## Server
 
