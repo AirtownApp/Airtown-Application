@@ -6,4 +6,11 @@
 
 :arrow_right: Click [here](link) to see the demo.
 
+# System overview:
 
+![image](https://github.com/user-attachments/assets/e7b61b4d-14be-4c1a-a3b3-250da2f170a6)
+
+## Server
+
+
+## Client
