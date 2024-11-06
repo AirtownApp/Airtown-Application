@@ -4,4 +4,4 @@
 
 :arrow_right: Click [here](link) to see the demo.
 
---- 
+![POI recsys schemde condensed updated](https://github.com/user-attachments/assets/cb7a8ea0-5675-497e-b089-c86b6617f268)
