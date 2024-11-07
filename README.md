@@ -19,31 +19,25 @@ Airtown App is developed as an application for smartphone, for both android and 
 
 ## Server
 
-### Prerequisites: 
-In order for the API to run properly, it is necessary to have an active PostgreSQL database on port 5432 on the same machine. 
-Running the database on a container is recommended:Pass
+### Getting started:
+:heavy_exclamation_mark: Since the system need to contact Google services and AirSENCE database, **Google API keys and AirSENCE tokens are mandatory**.
+After downloading the repo, install pip requirements:
+
+```bash
+    pip install -r requirements.txt
+```
+In the *config.py* file, put the server address (line:9), Google API key (line:23) and AirSENCE tokens (lines:31,32).
+In order for the API to run properly, it is necessary to have an active PostgreSQL database on port 5432 on the same machine. This database serves as the *User Data server* previously presented.
+Running the database on a container is recommended:
+
 ```bash
 $ docker pull postgres:alpine 
 
 $ docker run --name postgres-0 -e POSTGRES_PASSWORD=password -d -p 5432:5432 postgres:alpine 
 ```
 
-To access the container terminal, run
-```bash
-$ docker exec -it postgres-0 bash 
-```
 
 
-### Run the project
-After downloading the repo (and configured the container), 
-install pip requirements
-
-    pip install -r requirements.txt
-
-Then run the python file *main.py*
-```bash
-python3 main.py 
-```
 
 
 ## Client
