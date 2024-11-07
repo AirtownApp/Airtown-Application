@@ -210,6 +210,3 @@ test_det.py
 
 # GITHUB identification and token
 .netrc
-
-
-config.py
