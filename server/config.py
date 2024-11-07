@@ -105,6 +105,6 @@ CLIENT_UPDATE_DELAY = 10;
 '''
 Debug and test
 '''
-# If debug == True, script of server reload atfter each cahgne
+# If debug == True, script of server reload atfter each change
 debug =  True;
 fakeAQI = False;
