@@ -10,6 +10,12 @@
 
 ![image](https://github.com/user-attachments/assets/e25a6981-d3e0-4abe-8570-67649840bbc5)
 
+Airtown App is developed as an application for smartphone, for both android and iOS devices. As the deployment diagram shows, the system has a client-server architecture, which is composed by five main elements:
+1. **Smartphone application (client)**, it serves as the user interface on smartphones and performs POI suggestions integrating air quality information; the client include the recommandation system and collects user preferences.
+2. **Main Server**, retrieves the information requested by the client by contacting databases through APIs; it also orchestrates the federated learning process.
+3. **User Data server**, collects user information for registration/login (i.e.: username, e-mail, hashed password).
+4. **AirSENCE database**, collects real-time Air Quality Index (AQI) and pollutant data measured by AirSENCE sensors.
+5. **Google services**, collect information about POIs (e.g.: user rating, photos, routing data); the main server contact Google services by Places API and Directions API.
 
 ## Server
 
