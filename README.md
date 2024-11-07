@@ -27,7 +27,8 @@ After downloading the repo, install pip requirements:
 ```bash
     pip install -r requirements.txt
 ```
-In the *config.py* file, put the server address (line:9), Google API key (line:23) and AirSENCE tokens (lines:31,32).
+In the *config.py* file, put the server address (line:9), Google API key (line:23) and AirSENCE tokens (lines:31,32). To use real-time pollutant data, set in *config.py* the variable *fakeAQI* (line:110) to false. Remember to use synthetic AQI data only when the user is in Aldo Moro square (Bari, Italy).
+
 In order for the API to run properly, it is necessary to have an active PostgreSQL database on port 5432 on the same machine. This database serves as the *User Data server* previously presented.
 Running the database on a container is recommended:
 
@@ -37,30 +38,13 @@ $ docker pull postgres:alpine
 $ docker run --name postgres-0 -e POSTGRES_PASSWORD=password -d -p 5432:5432 postgres:alpine 
 ```
 
-
-
-
-
 ## Client
 
 ### Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-### Run project:
-After cloning the repo, If you get errors in all the libraries
+After cloning the repo, If you get errors in all the libraries do as follows: 
 ```bash
     flutter clean
     flutter create .
 ```
-
-then run main.dart file in lib directory
+Then, put server address (and port) in *lib/commonFunctions/keys.dart* (line:3).
